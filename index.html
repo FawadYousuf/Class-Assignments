@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+ <html>
+   <head>
+   <style type="text/css">
+   body {
+        font-family:Arial, Verdana, sans-serif;
+        /*background-color:
+        rgb(185,179,175);*/
+        } 
+   h5{     
+     text-align: center;
+     text-decoration: none;
+     color: black;
+   }  
+   p{
+     font-size: 7pt;
+   }
+   #fb {
+     text-align: center;
+     text-decoration: none;
+     font-size: 7pt;
+   }
+   
+   button {
+     text-align: center;
+   }
+   </style>
+   
+ </head>
+   
+ <body>
+   <h1>Table With <em>function</em> Method</h1>
+   
+   <p>Generate Your Table</p>
+   <button type='button' onclick="table();">Click here
+   </button><br> <br> <br> <br> <br>
+   <h5>Daimond Pattern</h5>
+   <p id="fb">Made by FawadYousuf</p>
+   
+   <br>
+   
+   <script>
+     
+     function table(num){
+     
+     var a = prompt('Enter Any Num');
+    
+     for(var i = 1; i <= 20; i++) {
+   
+    document.write(a + " x " + i + ' = ' + (a*i) + '<br>');
+      }
+    }
+    
+ function diamondPattern(dn){
+
+ for(var i = dn; i <= dn; i++) {
+
+document.write("&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;" + i +i+i+i+i+i+i+i+i+i+i+ "<br>" +"&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;" + i +i+i+i+i+i+i+i+i+i+i+i+ "<br>" + "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;" + i + i+i+i+i+i+i+i+i+i+i+ i+i + "<br>" + "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;" + i +i+i+i+i+i+i+i+i+i+i+ "<br>" + "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;" +i+i+i+i+i+i+i+i+i
+     + "<br>" + "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"
+     +i+i+i+i+i+i+i +"<br>" + "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"
+     +i+i+i+i+i+ "<br>" +
+"&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;" 
+    +i+i+i+ "<br>"+
+"&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"  +i+ "<br>" 
+ );
+    }    
+}
+var patternalphabate = "*f*"
+diamondPattern(patternalphabate);
+
+
+   </script>
+   
+  </body>
+
+</html>
+
+
+<!--document.write("Diamond Pattern" + "<br>"+ "Made By FawadYousuf" + "<br>" + '<br>')-->
