@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+	<body>
+
+		<h1>MarkSheet for Developers</h1>
+		<p>Made by <em>Fawad</em></p>
+  <span>Name </span>
+   <span id="nam"> Name </span> <br>
+   <span>F/Name</span>
+   <span id="fn"> F/Name </span> <br>
+<span>Git Marks</span>
+   <span id="gitm"> Git Marks</span> <br>
+ <span>HTML Marks</span>
+  <span id="htmlm"> HTML Marks </span> <br>
+   <span>CSS Marks</span>
+    <span id="cssm"> CSS Marks </span> <br>
+   <span>JS Marks</span>
+    <span id="jsm"> JS Marks </span> <br>
+    <span>Test</span>
+    <span id="test"> Fail</span>
+		<script>
+    var name = prompt("What's Your Name"); document.getElementById("nam").innerHTML = name;
+    var fname = prompt("What's Your Father Name"); document.getElementById("fn").innerHTML = fname;
+    var gitmarks = prompt("Enter Your Git Marks"); document.getElementById("gitm").innerHTML = gitmarks;
+    var htmlmarks= prompt("Enter Your HTML Marks"); document.getElementById("htmlm").innerHTML = htmlmarks;
+
+    var cssmarks = prompt("Enter Your CSS Marks"); document.getElementById("cssm").innerHTML = cssmarks;
+    
+    var jsmarks = prompt("Enter Your JS Marks"); document.getElementById("jsm").innerHTML = jsmarks;
+    
+   var total = gitmarks + htmlmarks + cssmarks + jsmarks; 
+   if(total > 250 || 300 < total) { document.getElementById("test").innerHTML = total;}
+   // var pass = pass;
+   // if (gitmarks >= 60, htmlmarks >= 60 , cssmarks >= 60 , jsmarks >= 65) { document.getElementById("test").innerHTML = pass;
+		</script>
+	</body>
+</html>
